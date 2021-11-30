@@ -5,7 +5,7 @@ import cv2
 from PIL import ImageGrab
 
 
-codigo_barra = []
+codigo_barra = []  # Armazenará o código de barras
 
 
 def decode(image):  # Função que decodifica o código de barras
@@ -37,3 +37,7 @@ if __name__ == "__main__":
         cv2.destroyAllWindows()  # Fechando janela
 
 os.remove(filename)  # Removendo arquivo
+
+# TODO: Criar função para fazer o printscreen da tela (semelhante a Ferramenta de Captura do Windows) e salvar na Área de Transferência.
+# TODO: Criar interface através da biblioteca Tkinter.
+# TODO: Compilar para Windows (.exe) e Linux (.py)
